@@ -3,7 +3,7 @@ const mongoose = require("mongoose");
 const connectDB = async () => {
   try {
     await mongoose.connect(
-      "mongodb+srv://subhamkumar22082001:gQVaXIxJEIUU2net@cluster0.ycrz8tu.mongodb.net/trade?retryWrites=true&w=majority&appName=Cluster0"
+      "mongodb://127.0.0.1:27017/trades"
     );
     console.log("MongoDB connected");
   } catch (err) {
